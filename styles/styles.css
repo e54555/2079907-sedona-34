@@ -45,6 +45,7 @@ body {
   color: #242424;
   background-color: #ffffff;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -77,9 +78,11 @@ body {
 }
 
 .navigation-list {
+  display: flex;
   width: 430px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -88,6 +91,8 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 34px;
   font-size: 20px;
   font-weight: 700;
   color: #000000;
@@ -130,15 +135,9 @@ body {
 }
 
 .page-container {
-  width: 1200px;
+  width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.logo-text {
-  display: block;
-  margin: 0 auto;
-  padding-top: 51px;
 }
 
 .title-page {
@@ -148,6 +147,18 @@ body {
   background-image: url("../images/background_sedona.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.logo-text {
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+}
+
+.logo-white {
+  display: block;
+  position: relative;
+  bottom: -25px;
 }
 
 .caption {
@@ -167,21 +178,29 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .reasons-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  
 }
 
 .reasons-item {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .reasons-block-left {
+  width: 33.33%;
   height: 384px;
   text-align: center;
   background: #82B3D3;
+}
+
+.image-reasons-one {
+  width: 66.66%; 
 }
 
 .reasons-item-grid {
@@ -191,25 +210,23 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  flex-basis: 33.33%;
 }
 
 .reasons-subblock-house {
   background: rgba(131, 179, 211, 0.12);
-  width: 400px;
   background-image: url("../images/icon_house.svg");
   background-repeat: no-repeat;
 }
 
 .reasons-subblock-food {
   background: #FFFFFF;
-  width: 400px;
   background-image: url("../images/icon_food.svg");
   background-repeat: no-repeat;
 }
 
 .reasons-subblock-gift {
   background: rgba(131, 179, 211, 0.12);
-  width: 400px;
   background-image: url("../images/icon_gift.svg");
   background-repeat: no-repeat;
 }
